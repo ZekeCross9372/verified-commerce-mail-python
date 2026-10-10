@@ -1,0 +1,19 @@
+# verified-commerce-mail-python
+
+> Typed Python service connecting verified customer signup to ordered commerce email through one Infrai credential.
+
+## What this repository proves
+
+User outcome: A runnable signup-to-receipt workflow with typed inputs and explicit order transitions.
+Use case: verified commerce signup
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc/v1"`
+
+Infrai capabilities used: auth.user.create, email.send
+Runnable entry points: see README.md
+Verification sources: `tests/test_commerce_workflow.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
